@@ -1,0 +1,57 @@
+#smartnft-root {
+  .create-collection {
+    &__profile-uploader {
+      margin-bottom: 40px;
+    }
+
+    &__profile-uploader,
+    &__banner-uploader {
+      p {
+        margin-bottom: 20px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        color: #1e1e1e;
+      }
+
+      label {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        position: relative;
+        cursor: pointer;
+        background-size: cover !important;
+        background-position: center !important;
+        display: block;
+      }
+
+      img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      input {
+        display: none;
+      }
+    }
+
+    &__banner-uploader {
+      label {
+        width: 300px;
+        height: 150px;
+        border-radius: 8px;
+        display: block;
+
+        @include responsive(tab-port) {
+          width: 200px;
+        }
+        @include responsive(phone) {
+          width: 100%;
+        }
+      }
+    }
+    //priority class
+  }
+}

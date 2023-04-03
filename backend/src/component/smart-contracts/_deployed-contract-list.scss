@@ -1,0 +1,120 @@
+.deployed-contract {
+  width: 990px;
+  border-radius: 5px;
+  background: #fff;
+  border: 1px dashed #ccc;
+  margin-top: 40px;
+
+  h3 {
+    margin-bottom: 20px;
+    padding: 0 15px;
+  }
+
+  .lists {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    padding: 25px 15px;
+    border-top: 1px dashed #ccc;
+  }
+
+  .item {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+
+    .name {
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+      font-weight: 500;
+      img {
+        width: 16px;
+        margin-left: 8px;
+      }
+    }
+
+    .address {
+      font-size: 14px;
+      cursor: pointer;
+    }
+    .update {
+      margin-left: 10px;
+      display: inline-block;
+      vertical-align: middle;
+      cursor: pointer;
+    }
+    span.button {
+      border: none;
+      background-color: #3eb840;
+      color: #fff;
+      font-size: 14px;
+      padding: 4px 16px;
+      width: max-content;
+      border-radius: 20px;
+      min-height: auto;
+      line-height: 20px;
+      cursor: pointer;
+    }
+  }
+
+  .network_name {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 20px;
+    span {
+      display: flex;
+      align-items: center;
+      width: 135px;
+    }
+
+    img {
+      width: 16px;
+      margin-left: 8px;
+    }
+  }
+
+  .active-deactive-switch {
+    .outer {
+      height: 15px;
+      width: 100%;
+      background: black;
+      border-radius: 10px;
+      position: relative;
+    }
+    .inner {
+      height: 15px;
+      width: 16px;
+      background: red;
+      border-radius: 50%;
+      position: absolute;
+    }
+  }
+}
+.proxy-market-address {
+  padding: 30px;
+  text-align: center;
+  h2 {
+    margin-top: 0;
+    font-size: 20px;
+  }
+  span.close {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    cursor: pointer;
+  }
+  input {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    height: 40px;
+    border: 1px solid #555;
+    box-shadow: none;
+  }
+  button {
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+  }
+}

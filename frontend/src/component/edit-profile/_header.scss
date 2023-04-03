@@ -1,0 +1,39 @@
+.edit-profile-header {
+  margin-bottom: 100px;
+  position: relative;
+  &__loading-con {
+    position: relative;
+  }
+
+  &__banner-loading,
+  &__banner {
+    height: 400px;
+    width: 100%;
+    border-radius: 8px;
+    background-color: #f3f3f3;
+    background-position: center !important;
+    background-size: cover !important;
+    @include responsive(phone) {
+      height: 200px;
+    }
+  }
+
+  &__profile-loading,
+  &__profile {
+    height: 150px;
+    width: 150px;
+    background: #f3f3f3;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    border: 5px solid #fff;
+    background-position: center !important;
+    background-size: cover !important;
+    transform: translateX(-50%);
+    @include responsive(phone) {
+      height: 120px;
+      width: 120px;
+    }
+  }
+}

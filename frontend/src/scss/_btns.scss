@@ -1,0 +1,16 @@
+button.btn-main-black {
+  font-size: 16px;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  color: #fff;
+  background-color: #1e1e1e;
+  font-weight: 500;
+  transition: all 0.3s;
+  cursor: pointer;
+
+  &:disabled {
+    background-color: #827a7a;
+    cursor: not-allowed;
+  }
+}

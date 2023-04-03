@@ -1,0 +1,43 @@
+.top-collectors {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+
+  @include responsive(phone) {
+    grid-template-columns: 1fr !important;
+    column-gap: 0;
+    row-gap: 30px;
+  }
+
+  .collector {
+    &__user {
+      display: grid;
+      grid-template-columns: 60px 1fr;
+      column-gap: 20px;
+      align-items: center;
+
+      img {
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      h3 {
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: 2px;
+        color: #000;
+      }
+
+      p {
+        font-size: 14px;
+        font-weight: 400;
+        margin: 0;
+      }
+    }
+  }
+}

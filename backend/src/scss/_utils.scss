@@ -1,0 +1,137 @@
+#app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.wp-admin.smart-nft_page_smartnft-contracts #wpcontent,
+.wp-admin.toplevel_page_smartnft #wpcontent {
+  background-color: #f3f3f3;
+}
+#adminmenu div.wp-menu-image img {
+  width: 18px;
+  margin-top: -2px;
+}
+.wp-admin .collections-page{
+  width: 80%;
+  .contracts-standard{
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+  }
+}
+.create-coll-loader-con {
+  padding: 30px;
+  text-align: center;
+
+  h3 {
+    font-size: 20px;
+  }
+}
+.video-preview {
+  position: relative;
+  .card__img:hover{
+    transform: scale(1) !important;
+  }
+  .video-icon {
+    position: absolute;
+    background-color: #ffffffd4;
+    top: 12px;
+    right: 12px;
+    border-radius: 10px;
+    width: 40px;
+    backdrop-filter: blur(3px);
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    svg {
+      width: 28px;
+      height: 28px;
+      fill: rgb(153, 153, 153);
+    }
+  }
+}
+.audio-preview {
+  position: relative;
+  height: 230px;
+  width: 100%;
+  background-color: #eee;
+  display: block;
+  border-radius: 10px;
+  .form-preview-icon {
+    position: absolute;
+    background: #ffffffc9;
+    padding: 10px;
+    border-radius: 10px;
+    right: 7px;
+    top: 7px;
+    svg {
+      display: block;
+    }
+  }
+}
+.create-nft-form,
+.nft-list__table {
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 21px;
+  }
+
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 2.5px;
+    bottom: 2.5px;
+    background-color: white;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+
+  .switch .checked + .slider,
+  input:checked + .slider {
+    background-color: #006466;
+  }
+
+  .switch .checked + .slider,
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196f3;
+  }
+
+  .switch .checked + .slider:before,
+  input:checked + .slider:before {
+    -webkit-transform: translateX(19px);
+    -ms-transform: translateX(19px);
+    transform: translateX(19px);
+  }
+
+  .slider.round {
+    border-radius: 34px;
+  }
+
+  .slider.round:before {
+    border-radius: 50%;
+  }
+}

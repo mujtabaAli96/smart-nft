@@ -1,0 +1,38 @@
+label[for="price"],
+label.price,
+label[for="auction__min_price"] {
+  position: relative;
+
+  & > span {
+    position: absolute;
+    right: 20px;
+    top: 42px;
+    display: flex;
+    align-items: center;
+
+    img {
+      transform: rotate(-90deg);
+      margin-left: 10px;
+      cursor: pointer;
+      width: 16px;
+    }
+  }
+
+  .price__symbol {
+    position: absolute;
+    right: 10px;
+    top: 42px;
+    z-index: 10;
+
+    & > div {
+      display: grid;
+      align-items: center;
+      grid-template-columns: 1fr;
+      padding: 7px 20px;
+      background: #dcd7d7;
+      row-gap: 10px;
+      z-index: 10;
+      border-radius: 6px;
+    }
+  }
+}

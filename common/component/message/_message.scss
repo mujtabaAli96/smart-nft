@@ -1,0 +1,67 @@
+.notification-message{
+    position: fixed;
+    top: 100px;
+    right: 10px;
+    z-index: 9999999;
+    animation: messageFade 0.1s;
+    p{
+        display: flex;
+        align-items: center;
+        padding: 5px 20px 5px 5px;
+        border-radius: 10px;
+        margin: 0;
+        font-size: 15px;
+        margin-left: 10px;
+    }
+    .message{
+        &__success{
+            background: #EBF7EE;
+            border: 2px solid #C1E6CB;
+        }
+        &__warning{
+            background: #fff7b2;
+            border: 2px solid #fff36f;
+        }
+        img{
+            width: 30px;
+            margin-right: 10px;
+        }
+    }
+}
+@keyframes messageFade{
+    from{
+        transform: translateX(100%);
+    }
+    to{
+        transform: translate(0%);
+    }
+}
+.media-viewer-pop{
+    z-index: 9999999999;
+    display: none;
+    &.open{
+        .close{
+            position: fixed;
+            top: 15px;
+            right: 10px;
+            transform: translateX(-50%);
+            cursor: pointer;
+        }
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: rgba(0,0,0,0.8);
+        height: 100vh;
+        width: 100vw;
+        padding: 100px;
+        color: #fff;
+        text-align: center;
+        .main-content{
+            img{
+                border-radius: 10px;
+                max-height: 70vh;
+            }
+        }
+    }
+}

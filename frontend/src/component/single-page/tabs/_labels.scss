@@ -1,0 +1,44 @@
+.trait-progresses {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 20px;
+  column-gap: 30px;
+  transition: all 0.5s;
+
+  .progress {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    column-gap: 10px;
+    transition: all 0.5s;
+
+    &__flex {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      p {
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: 14px;
+      }
+    }
+
+    &__outer {
+      position: relative;
+      height: 20px;
+      width: 100%;
+      border-radius: 8px;
+      background-color: #ddd;
+    }
+
+    &__inner {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 20px;
+      background-color: #005bf0;
+      border-radius: 8px;
+    }
+  }
+}

@@ -1,0 +1,33 @@
+.smart-nft-popup {
+  &__social-share {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 75%;
+    margin: 10px auto 0;
+    column-gap: 10px;
+    a {
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      cursor: pointer;
+
+      img {
+        width: 20px;
+      }
+    }
+  }
+
+  &__share {
+    .popup-image {
+      img {
+        width: 85%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 8px;
+      }
+    }
+  }
+}

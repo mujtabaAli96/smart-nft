@@ -1,0 +1,64 @@
+.buynft {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin: 10px 0;
+  &__price-container {
+    background-color: #eaeaea;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  &__price-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #a7a7a7;
+    margin-bottom: 10px;
+  }
+
+  &__price-con {
+    display: flex;
+    align-items: center;
+
+    img {
+      width: 24px;
+      margin-right: 13px;
+      border-radius: 50%;
+      margin-bottom: 5px;
+    }
+  }
+
+  &__price {
+    span {
+      font-size: 14px;
+      margin-left: 14px;
+    }
+  }
+
+  &__buy-btn,
+  &__puton-sell-btn,
+  &__remove-from-sell {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    color: #fff;
+    padding: 15px 28px;
+    border: none;
+    border-radius: 10px;
+    background-color: #2271b1;
+    display: block;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+    margin-top: 0px;
+
+    &:focus {
+      outline: none;
+    }
+
+    img {
+      margin-right: 12px;
+    }
+  }
+}

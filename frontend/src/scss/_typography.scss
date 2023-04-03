@@ -1,0 +1,43 @@
+.header-one {
+  font-size: var(--header-one-font-size);
+  font-weight: var(--header-one-font-weight);
+  color: var(--header-one-font-color);
+  line-height: var(--header-one-line-height);
+}
+
+.header-two {
+  font-size: var(--header-two-font-size);
+  font-weight: var(--header-two-font-weight);
+  color: var(--header-two-font-color);
+  line-height: var(--header-two-line-height);
+}
+
+.header-three {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+}
+
+.pra-one {
+  font-size: var(--pra-one-font-size);
+  font-weight: var(--pra-one-font-weight);
+  line-height: var(--pra-one-line-height);
+  color: var(--pra-one-font-color);
+}
+.pragraph {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #757575;
+}
+
+.meta-font {
+  color: #a7a7a7;
+  line-height: 10px;
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}

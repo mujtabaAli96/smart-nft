@@ -1,0 +1,22 @@
+.smart-nft-notification{
+    display: block;
+    margin: 15px 0;
+    > p{
+        background: #fff;
+        display: block;
+        border: 1px solid #ddd;
+        padding: 10px 20px;
+        border-radius: 10px;
+    }
+    &__success{
+        border-left: 4px solid #15cd15 !important;
+    }
+    &__warning{
+        border-left: 4px solid #dede69 !important;
+    }
+}
+.buynft{
+    .smart-nft-notification{
+        margin-bottom: 0;
+    }
+}

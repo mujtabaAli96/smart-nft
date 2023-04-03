@@ -1,0 +1,47 @@
+.categories,
+.collections {
+  display: grid;
+  grid-template-columns: 1fr 40px;
+  margin-bottom: 5px;
+
+  &__con {
+    position: relative;
+  }
+
+  &__suggetions {
+    position: absolute;
+    max-height: 100px;
+    border-radius: 10px;
+    background: #ede9e9;
+    padding: 10px 15px;
+    left: 0;
+    right: 0;
+    z-index: 9;
+    margin-top: -14px;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+
+    &::-webkit-scrollbar {
+      width: 5px;
+    }
+    &::-webkit-scrollbar-track {
+      background: #f1f1f1;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: #ddd;
+      border-radius: 4px;
+    }
+
+    span {
+      padding: 5px 0px;
+      cursor: pointer;
+      font-size: 14px;
+      transition: all 0.4s;
+
+      &:hover {
+        color: #ee3e3e;
+      }
+    }
+  }
+}

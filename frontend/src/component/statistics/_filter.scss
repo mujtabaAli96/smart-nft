@@ -1,0 +1,22 @@
+.stats-filter {
+  display: grid;
+  margin: 20px 0px 20px auto;
+  width: 280px;
+  justify-content: space-between;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  grid-template-columns: repeat(6, 1fr);
+  overflow: hidden;
+  span {
+    padding: 6px 10px;
+    cursor: pointer;
+    text-align: center;
+  }
+  span.active {
+    // font-weight: bold;
+    background-color: #ddd;
+  }
+  @include responsive(tab-port){
+    margin: 0 auto 20px;
+  }
+}

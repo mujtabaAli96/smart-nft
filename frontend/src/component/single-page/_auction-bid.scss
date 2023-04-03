@@ -1,0 +1,75 @@
+.auction-bid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20px;
+
+  & > div > p:not(:last-child) {
+    color: #000;
+    font-weight: 500;
+  }
+
+  & > button {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 6px;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-weight: 600;
+    background: #9a9797;
+    color: #3d3d3d;
+    cursor: pointer;
+  }
+
+  & > div {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: max-content max-content 100px;
+  }
+
+  & > &__input-box {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column: 1 / -1;
+    grid-template-rows: max-content max-content;
+
+    input {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      margin: 10px auto;
+      width: 70%;
+    }
+
+    button {
+      text-align: center;
+      padding: 5px 0;
+      border-radius: 8px;
+      background: green;
+      margin: 10px auto;
+      width: 70%;
+      color: #fff;
+      cursor: pointer;
+      font-weight: 600;
+    }
+  }
+}
+
+.close-bid {
+  & > button {
+    width: 100%;
+    margin: 20px 0;
+    text-align: center;
+    background: #1112c7;
+    padding: 8px;
+    border-radius: 8px;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+  }
+}
+
+.auc-bid-con {
+  background: #ddd;
+  padding: 20px;
+  margin-bottom: 20px;
+}

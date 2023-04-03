@@ -1,0 +1,215 @@
+#smartnft-root {
+  .smart-nft-profile {
+    .profile-header {
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      margin-bottom: 20px;
+
+      @include responsive(tab-port) {
+        margin-bottom: 110px;
+      }
+
+      @include responsive(phone) {
+        margin-bottom: 40px;
+      }
+
+      & > div {
+        position: relative;
+      }
+
+      &__loading-con {
+        position: relative;
+      }
+
+      &__banner-loading,
+      &__banner {
+        height: 400px;
+        width: 100%;
+        border-radius: 8px;
+        background-color: #f3f3f3;
+        background-position: center !important;
+        background-size: cover !important;
+        @include responsive(phone) {
+          height: 250px;
+        }
+      }
+
+      &__profile-loading,
+      &__profile {
+        height: 150px;
+        width: 150px;
+        background: #f3f3f3;
+        border-radius: 50%;
+        position: absolute;
+        bottom: -25px;
+        left: 20px;
+        border: 5px solid #fff;
+        background-position: center !important;
+        background-size: cover !important;
+        @include responsive(phone) {
+          height: 100px;
+          width: 100px;
+          bottom: -25px;
+          left: 5px;
+        }
+      }
+
+      &__name {
+        margin-top: 45px;
+        margin-bottom: 15px;
+        @include responsive(phone) {
+          margin-top: 40px;
+          font-size: 26px;
+        }
+      }
+
+      &__accAdd {
+        font-size: 30px;
+        margin-top: 50px;
+        margin-bottom: 15px;
+        @include responsive(phone) {
+          margin-top: 40px;
+        }
+      }
+
+      &__accAndEdit {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        position: absolute;
+        right: 15px;
+        bottom: -90px;
+        gap: 20px;
+        justify-self: end;
+
+        @include responsive(tab-port) {
+          bottom: -222px;
+          width: 100%;
+          justify-content: center;
+          right: 0;
+        }
+
+        @include responsive(phone) {
+          justify-content: right;
+          bottom: -68px;
+          display: grid;
+          gap: 10px;
+          transform: translate(-10px);
+        }
+      }
+
+      &__address {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 19px;
+        height: 51px;
+        @include responsive(phone) {
+          padding: 10px 0px;
+          height: 40px;
+          font-size: 13px;
+          height: 35px;
+        }
+
+        img {
+          margin-left: 15px;
+          height: 15px;
+          width: 15px;
+          cursor: pointer;
+        }
+      }
+
+      &__edit {
+        margin-left: auto;
+        @include responsive(phone) {
+          margin-right: 0px;
+        }
+      }
+
+      &__edit-btn {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 19px;
+        color: #1e1e1e;
+        padding: 16px 30px;
+        background-color: #fff;
+        border-radius: 10px;
+        border: 1px solid #ddd;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        @include responsive(phone) {
+          padding: 14px 20px 10px;
+          border-radius: 8px;
+          border: none;
+        }
+
+        img {
+          margin-right: 25px;
+          width: 16px;
+          @include responsive(phone) {
+            margin-right: 8px;
+          }
+        }
+      }
+
+      &__socials {
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        right: 15px;
+        bottom: 15px;
+        padding: 12px 0;
+        border-radius: 10px;
+        a{
+          position: relative;
+          &:hover{
+            span.social-profiles-tooltip{
+              visibility: visible;
+              opacity: 1;
+              transform: translateX(-50%) translateY(0px);
+            }            
+          }
+          span.social-profiles-tooltip{
+            transition: all 0.2s ease;
+            visibility: hidden;
+            opacity: 0;
+            position: absolute;
+            top: -25px;
+            background: #222;
+            color: #fff;
+            left: 50%;
+            transform: translateX(-50%) translateY(10px);
+            padding: 1px 8px;
+            font-size: 13px;
+            border-radius: 5px;
+            text-transform: capitalize;          
+          }
+          svg{
+            width: 21px;
+          }
+        }
+        & > :not(:last-child) {
+          margin-right: 20px;
+        }
+
+        @include responsive(phone){
+          padding: 6px;
+          justify-content: right;
+          background-color: transparent;
+          border: none;
+        }
+      }
+
+      &__name-acc-con {
+        width: 100%;
+        margin: 0 auto;
+        @include responsive(phone) {
+          width: auto;
+        }
+      }
+    }
+  }
+}

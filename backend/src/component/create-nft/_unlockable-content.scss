@@ -1,0 +1,55 @@
+.unlockable {
+  &-con {
+    display: grid;
+    grid-template-columns: 1fr 40px;
+    margin-bottom: 5px;
+  }
+}
+// Unlockable upload
+label.unlockable-upload{
+  display: block;
+  text-align: center;
+  padding: 13px;
+  border-radius: 10px;
+  border: 1px dashed #ddd;
+  input[type=file]{
+    display: none;
+  }
+}
+.upload-lists{
+  margin: 10px 0;
+  .upload-single{
+    padding: 12px;
+    border: 1px solid #ddd;
+    position: relative;
+    margin-bottom: -1px;
+    &:first-child{
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+    &:last-child{
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+    }
+    p.file-name{
+      margin: 0;
+      margin-bottom: 2px !important;
+      font-weight: 600;
+      color: #111;
+    }
+    span.file-meta{
+      margin: 0;
+      margin-bottom: 0;
+      font-weight: normal;
+      font-size: 12px;
+      color: #888;
+    }
+    span.delete-file{
+      position: absolute;
+      top: 50%;
+      right: 10px;
+      transform: translateY(-50%);
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+.create-nft-form-parent {
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 950px;
+
+  .back {
+    cursor: pointer;
+    padding: 6px 0px;
+    margin-bottom: 10px;
+    width: max-content;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    svg {
+      fill: #6c6868;
+      width: 24px;
+      margin-right: 10px;
+    }
+  }
+}

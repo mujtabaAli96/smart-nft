@@ -1,0 +1,132 @@
+#smartnft-root,
+.smartnft_nft_grid_nfts {
+  .card {
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+
+    .audio-preview {
+      img {
+        height: 250px;
+        width: 100%;
+        object-fit: cover;
+        transition: all 0.5s;
+
+        &:hover {
+          transform: scale(1.1);
+        }
+
+        @include responsive(phone) {
+          height: auto;
+          width: 100%;
+        }
+
+        @include responsive(tab-land) {
+          height: auto;
+          width: 100%;
+        }
+
+        @include responsive(tab-port) {
+          height: auto;
+          width: 100%;
+        }
+      }
+    }
+
+    &__name {
+      margin-bottom: 20px;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+
+      @include responsive(tab-port) {
+        margin-bottom: 10px;
+      }
+    }
+
+    &__price {
+      font-size: 14px;
+      margin-bottom: 3px;
+
+      @include responsive(tab-port) {
+        font-size: 13px;
+        font-weight: 500;
+        color: #999;
+      }
+    }
+
+    &__img {
+      height: 250px;
+      width: 100%;
+      object-fit: cover;
+      transition: all 0.5s;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+
+      @include responsive(tab-port) {
+        height: 170px;
+      }
+    }
+
+    &__info {
+      background-color: #eee;
+      padding: 18px;
+      position: relative;
+      border-radius: 0 0 8px 8px;
+      span {
+        color: #afafaf;
+        margin-bottom: 8px;
+        display: block;
+
+        @include responsive(tab-port) {
+          display: none;
+        }
+      }
+    }
+
+    &__creator {
+      margin-bottom: 8px;
+
+      @include responsive(tab-port) {
+        display: none;
+      }
+    }
+    .quick-buy {
+      visibility: hidden;
+      transition: all 0.4s ease;
+      position: absolute;
+      top: 200px;
+      left: 50%;
+      transform: translateX(-50%) translateY(90px);
+      border: none;
+      padding: 5px 16px;
+      border-radius: 50px;
+      background-color: #fff;
+      line-height: 26px;
+      img {
+        width: 12px;
+        margin-right: 4px;
+      }
+    }
+    :hover {
+      .quick-buy {
+        visibility: visible;
+        transform: translateX(-50%) translateY(0px);
+      }
+    }
+    figure {
+      position: relative;
+      margin: 0;
+      max-height: 250px;
+      background-color: #eee;
+      img{
+        width: 100%;
+      }
+      @include responsive(tab-port) {
+        height: 160px;
+      }
+    }
+  }
+}

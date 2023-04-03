@@ -1,0 +1,32 @@
+#smartnft-root {
+  .create-collection {
+    margin-left: auto;
+    margin-right: auto;
+
+    &__form-imgupload-container {
+      display: grid;
+      grid-template-columns: 1fr 300px;
+      column-gap: 100px;
+
+      @include responsive(phone) {
+        display: grid;
+        grid-template-columns: none;
+        -moz-row-gap: 30px;
+        row-gap: 30px;
+      }
+    }
+
+    &__btn {
+      margin-top: 30px;
+    }
+  }
+}
+
+.create-coll-loader-con {
+  padding: 30px;
+  text-align: center;
+
+  h3 {
+    font-size: 20px;
+  }
+}

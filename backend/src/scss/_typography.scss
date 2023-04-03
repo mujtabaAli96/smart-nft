@@ -1,0 +1,26 @@
+.header-one {
+  font-size: var(--header-one-font-size);
+  font-weight: var(--header-one-font-weight);
+  color: var(--header-one-font-color);
+  line-height: var(--header-one-line-height);
+}
+.header-two {
+  font-size: var(--header-two-font-size) !important;
+  font-weight: var(--header-two-font-weight);
+  color: var(--header-two-font-color);
+  line-height: var(--header-two-line-height);
+}
+.header-four {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #1e1e1e;
+}
+.pra-one {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  color: #757575;
+}

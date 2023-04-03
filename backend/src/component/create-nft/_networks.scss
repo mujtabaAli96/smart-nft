@@ -1,0 +1,47 @@
+.deployed-networks-heading{
+    width: 80%;
+    margin-top: 40px;
+    h2{
+        font-size: 24px;
+        margin: 0;
+    }
+    p{
+        font-size: 16px;
+    }
+    @include responsive(phone){
+        width: 100%;
+    }
+    @include responsive(tab-port){
+        width: 100%;
+    }
+}
+.deployed-networks{
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+    width: 80%;
+    .network{
+        min-width: 280px;
+        max-width: 300px;
+        border: 1px solid #ddd;
+        text-align: center;
+        padding: 40px;
+        border-radius: 10px;
+        cursor: pointer;
+        background-color: #fff;
+        img{
+            width: 70px;
+            margin-bottom: 15px;
+        }
+        h2{
+            font-size: 21px;
+            margin-bottom: 5px;
+        }
+        p{
+            font-size: 16px;
+        }
+        &:hover{
+            border: 1px solid #888;
+        }
+    }
+}

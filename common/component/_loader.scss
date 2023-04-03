@@ -1,0 +1,284 @@
+
+.all-nft-skeleton {
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    width: 100%;
+  
+    @include responsive(tab-port) {
+      grid-template-columns: 1fr 1fr !important;
+    }
+    @include responsive(phone) {
+      grid-template-columns: 1fr 1fr !important;
+    }
+  
+    &__inner {
+      border-radius: 10px;
+      overflow: hidden;
+      @include responsive(phone){
+        height: 210px;
+      }
+    }
+  
+    &__image-con {
+      height: 250px;
+
+      @include responsive(phone){
+        height: 130px;
+      }
+    }
+  
+    &__image {
+      height: 100% !important;
+      border-radius: 0 !important;
+    }
+  
+    &__contents {
+      background: #ddd;
+      padding: 15px;
+      height: 120px;
+    }
+  
+    &__name {
+      margin: 0;
+      margin-bottom: 20px;
+      height: 20px;
+      width: 80%;
+      border-radius: 6px;
+      margin-top: 5px;
+
+      @include responsive(phone){
+        margin-bottom: 10px;
+      }
+    }
+  
+    &__price-label {
+      width: 60px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+
+      @include responsive(phone){
+        display: none !important;
+      }
+    }
+  
+    &__price {
+      width: 100px;
+      border-radius: 5px;
+    }
+}
+
+.skeleton-box{
+    &.skeleton-deep{
+        background-color: #ddd;
+    }
+    &.overlap-left{
+        position: absolute;
+        top: 280px;
+        left: 20px;
+
+        @include responsive(phone){
+            position: absolute;
+            top: 140px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    &.full-width{
+        width: 100%;
+    }
+    &.w-20{
+        width: 20%;
+    }
+    &.w-30{
+        width: 30%;
+    }
+    &.w-40{
+        width: 40%;
+    }
+    &.w-50{
+        width: 50%;
+    }
+    &.w-60{
+        width: 60%;
+    }
+    &.w-70{
+        width: 70%;
+    }
+    &.w-80{
+        width: 80%;
+    }
+    &.w-90{
+        width: 90%;
+    }
+    &.w-30p{
+        width: 30px;
+    }
+    &.w-40p{
+        width: 40px;
+    }
+    &.w-50p{
+        width: 50px;
+    }
+    &.w-60p{
+        width: 60px;
+    }
+    &.w-70p{
+        width: 70px;
+    }
+    &.w-80p{
+        width: 80px;
+    }
+    &.w-90p{
+        width: 90px;
+    }
+    &.w-title{
+        width: 300px;
+    }
+    &.h-10p{
+        height: 10px;
+    }
+    &.h-20p{
+        height: 20px;
+    }
+    &.h-30p{
+        height: 30px;
+    }
+    &.h-40p{
+        height: 40px;
+    }
+    &.h-50p{
+        height: 50px;
+    }
+    &.h-400p{
+        height: 400px;
+
+        @include responsive(phone){
+            height: 210px;
+        }
+    }
+    &.h-300p{
+        height: 300px;
+    }
+    &.h-150p{
+        height: 150px;
+        @include responsive(phone){
+            height: 100px;
+        }
+    }
+    &.w-150p{
+        width: 150px;
+        @include responsive(phone){
+            width: 100px;
+        }
+    }
+    &.mt-50{
+        margin-top: 50px;
+    }
+    &.mb-10px{
+        margin-bottom: 15px;
+    }
+    &.mb-15px{
+        margin-bottom: 15px;
+    }
+    &.mb-30px{
+        margin-bottom: 30px;
+    }
+    &.mb-40px{
+        margin-bottom: 40px;
+    }
+    &.mb-50px{
+        margin-bottom: 50px;
+    }
+    &.border-flat{
+        border-radius: 0px;
+    }
+    &.border-round{
+        border-radius: 10px;
+    }
+    &.border-circle{
+        border-radius: 50px;
+    }
+}
+.skeleton-grid-four{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+    text-align: right;
+    width: 60%;
+}
+.table-loading-container table{
+    width: 100%;
+    height: 200px;
+    border-collapse: collapse;
+    thead{
+        tr{
+            td{
+                padding: 20px;
+                background-color: #7676ff;
+                &:first-child{
+                    width: 80px;
+                    border-top-left-radius: 5px;
+                }
+                &:last-child{
+                    width: 80px;
+                    border-top-right-radius: 5px;
+                }
+            }
+        }
+    }
+    tbody{
+        tr{
+            td{
+                padding: 10px 20px;
+            }
+            &:nth-child(odd){
+                background-color: #fafafa;
+            }
+            &:nth-child(even){
+                background-color: #fff;
+            }
+        }
+    }
+
+}
+.skeleton-box{
+    border-radius: 10px;
+    display: block;
+    height: 1em;
+    position: relative;
+    overflow: hidden;
+    background-color: #eee;
+    &::after{
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        transform: translateX(-100%);
+        background-image: linear-gradient(
+          90deg,
+          rgba(255, 255, 255, 0) 0,
+          rgba(255, 255, 255, 0.2) 20%,
+          rgba(255, 255, 255, 0.5) 60%,
+          rgba(255, 255, 255, 0)
+        );
+        animation: shimmer 2s infinite;
+        content: "";
+    }
+}
+@keyframes shimmer {
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+@keyframes fadeFromLeft {
+    0% {
+        transform: translate(-100%, -50%);
+    }
+    100% {
+        transform: translate(0%, -50%);
+    }
+}

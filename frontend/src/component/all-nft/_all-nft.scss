@@ -1,0 +1,33 @@
+#smartnft-root {
+  .infinite-scroll {
+    width: 100%;
+  }
+
+  .all-nft-main-con {
+    margin: 30px auto;
+  }
+
+  .all-nfts {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin: 10px auto;
+    width: 100%;
+
+    @include responsive(tab-land) {
+      grid-template-columns: 1fr 1fr 1fr !important;
+    }
+
+    @include responsive(tab-port) {
+      grid-template-columns: 1fr 1fr !important;
+    }
+
+    @include responsive(phone) {
+      grid-template-columns: 1fr 1fr !important;
+    }
+
+    a {
+      text-decoration: none;
+    }
+  }
+}

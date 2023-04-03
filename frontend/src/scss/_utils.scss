@@ -1,0 +1,832 @@
+#smartnft-root {
+  width: 100%;
+  padding: 0px 20px;
+  min-height: 100vh;
+}
+.video-preview {
+  position: relative;
+  .video-icon {
+    position: absolute;
+    background-color: #ffffffd4;
+    top: 7px;
+    right: 7px;
+    border-radius: 10px;
+    padding: 4px;
+    backdrop-filter: blur(3px);
+    height: 35px;
+    svg {
+      width: 28px;
+      height: 28px;
+      fill: #666;
+    }
+  }
+}
+.audio-preview {
+  position: relative;
+  height: 230px;
+  width: 100%;
+  background-color: #eee;
+  display: block;
+  border-radius: 10px;
+  .form-preview-icon {
+    position: absolute;
+    background: #ffffffc9;
+    padding: 10px;
+    border-radius: 10px;
+    right: 7px;
+    top: 7px;
+    svg {
+      display: block;
+      color: #666;
+    }
+  }
+}
+
+// Styling dark version
+.smartnft-dark-version{
+  // Notifications
+  .smart-nft-notification p{
+    background-color: var(--dark-background-secondary);
+    color: var(--dark-text-secondary);
+    border: var(--dark-border-color);
+  }
+  // skeleton loaders
+  .skeleton-box{
+    background-color: var(--dark-background-primary);
+    &::after{
+      background-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, 0.1) 20%, rgba(255, 255, 255, 0.2) 60%, rgba(255, 255, 255, 0));
+    }
+    &.skeleton-deep{
+      background-color: var(--dark-background-secondary);
+    }
+  }
+  .all-nft-skeleton,
+  .all-collections-skeleton{
+    &__inner,
+    &__contents{
+      background: var(--dark-background-secondary);
+    }
+  }
+
+  // All nft pages
+  #smartnft-root .card, 
+  .smartnft_nft_grid_nfts .card{
+    &__info,
+    figure{
+      background-color: var(--dark-background-primary);
+      .meta-font{
+        color: var(--dark-text-secondary);
+      }
+      .header-three{
+        color: var(--dark-text-primary);
+      }
+    }
+  }
+  // Single NFT page
+  .single-nft__name-con a{
+    color: var(--dark-text-secondary);
+  }
+  .single-nft__creator-name{
+    color: var(--dark-text-primary);
+  }
+  .header-one.single-nft__name{
+    color: var(--dark-text-primary);
+  }
+  .unlockable-content{
+    font-weight: normal;
+    background: var(--dark-background-secondary);
+    color: var(--dark-text-primary);
+    border-color: var(--dark-border-color);
+  }
+  .single-nft-options{
+    background: var(--dark-background-primary);
+    box-shadow: 0px 10px 10px var(--dark-background-secondary);
+    span{
+      color: var(--dark-text-primary);
+      &:hover{
+        background-color: var(--dark-background-secondary);
+      }
+    }
+  }
+  .single-nft__like-share{
+
+    .btn-like span{
+      color: var(--dark-text-primary);
+    }
+  }
+  .single-nft__category-name{
+    border-color: var(--dark-border-color);
+  }
+  .single-nft__share-section span{
+    color: var(--dark-text-primary);
+  }
+  .single-nft__category-name{
+    a{
+      color: var(--dark-text-secondary);
+    }
+  }
+  .creator_and_owner_con{
+    .creator-label{
+      color: var(--dark-text-secondary);
+    }
+    .single-nft__creator-name{
+      color: var(--dark-text-primary);
+    }
+  }
+  .single-nft-info-tabs{
+    &__container{
+      background: var(--dark-background-primary);
+    }
+    &__tab{
+      .tab-properties{
+        &__item{
+          span:first-child{
+            color: var(--dark-text-secondary);
+          }
+          span:last-child{
+            color: var(--dark-text-primary);
+          }
+        }
+      }
+      .des-tab{
+        &__title{
+          color: var(--dark-text-primary);
+          &.royalties span{
+            background: var(--dark-background-secondary) ;
+          }
+        }
+        &__des{
+          color: var(--dark-text-secondary);
+        }
+        &__details-box{
+          background: var(--dark-background-primary);
+          border-color: var(--dark-border-color);
+          h4{
+            color: var(--dark-text-primary);
+          }
+          p, a{
+            color: var(--dark-text-secondary);
+          }
+          li{
+            svg{
+              path{
+                stroke: var(--dark-text-primary);
+                &#Path_1,
+                &#Path_2{
+                  fill: var(--dark-text-primary);
+                }
+              }
+            }
+          }
+        }
+      }
+      
+    }
+    &__header{
+      p{
+        color: var(--dark-text-secondary);
+        &.active{
+          color: var(--dark-text-primary);
+          background: var(--dark-background-secondary);
+        }
+      }
+    }
+    .single-nft-history {
+      .history-details p{
+        color: var(--dark-text-secondary);
+      }
+      .history-price{
+        color: var(--dark-text-secondary);
+      }
+    }
+  }
+  .buy-component-skeleton{
+    border-color: var(--dark-border-color);
+    &__inner{
+      background-color: var(--dark-background-secondary);
+    }
+  }
+  .buynft{
+    border-color: var(--dark-border-color);
+    &__price{
+      color: var(--dark-text-primary);
+    }
+    &__price-convert{
+      color: var(--dark-text-secondary);
+    }
+    &__price-container{
+      background-color: var(--dark-background-secondary);
+    }
+    .putonsell{
+      background-color: var(--dark-background-secondary);
+      p{
+        color: var(--dark-text-primary);
+      }
+      input{
+        background-color: var(--dark-background-secondary);
+        border-color: var(--dark-border-color) !important;
+        color: var(--dark-text-primary);
+      }
+    }
+  }
+  // Inputs, select and buttons styling
+  #smartnft-root {
+    .app,
+    #app{
+      .price-range .input-range input,
+      .collection-filter input,
+      .status span,
+      .reset-filter,
+      .smartnft-dropdown__picker,
+      .smartnft-dropdown__options,
+      .toggle-filter{
+        background: var(--dark-background-secondary);
+        border-color: var(--dark-border-color);
+        color: var(--dark-text-primary);
+      }
+      .filter-and-nfts-container{
+        & > .filter:first-child{
+          &::-webkit-scrollbar-track {
+            background: var(--dark-background-secondary);
+          }
+  
+          &::-webkit-scrollbar-thumb {
+            background: var(--dark-background-primary);
+            border-radius: 4px;
+          }
+        }
+      }
+      .filter-section-heading h6{
+        color: var(--dark-text-primary);
+      }
+      .filter-section-heading{
+        border-color: var(--dark-border-color);
+        svg{
+          color: var(--dark-text-primary);
+        }
+      }
+      .collection-filter .collection__item{
+        p,span{
+          color: var(--dark-text-primary);
+        }
+      }
+      .smartnft-dropdown__options{
+        li:hover,
+        li.active{
+          background-color: var(--dark-background-primary);
+        }
+      }
+      label.search-bar-con {
+        input[type="text"]{
+          background: var(--dark-background-secondary);
+          border-color: var(--dark-border-color);
+          color: var(--dark-text-secondary);
+        } 
+      }
+    }
+  }
+  // Create NFT form
+  .create-nft-form{
+    background-color: transparent;
+    border-color: var(--dark-border-color) !important;
+    *{
+      color: var(--dark-text-primary);
+      border-color: var(--dark-border-color) !important;
+    }
+    .form-wallet__address{
+      color: var(--dark-text-primary);
+    }
+    input, textarea{
+      background: transparent;
+      color: var(--dark-text-primary);
+    }
+    .form-img-upload{
+      &__collection-suggesion,
+      &__category-suggesion,
+      input, textarea{
+        background: var(--dark-background-secondary);
+        border-color: var(--dark-border-color);
+        color: var(--dark-text-primary);
+      }
+      &__preview-section{
+        .title-skeleton, .price-skeleton, .preview-skeleton{
+          background-color: var(--dark-background-secondary);
+        }
+      }
+      &__upload-box{
+        label{
+          background: var(--dark-background-secondary);
+          color: var(--dark-text-primary);
+        }
+        .close-media{
+          background: var(--dark-background-secondary);
+        }
+      }
+    }
+    .slider{
+      background-color: var(--dark-border-color);
+    }
+    .upload-lists .upload-single p.file-name{
+      color: var(--dark-text-primary);
+    }
+  }
+  // Contract standards
+  .contracts-standard div{
+    background-color: var(--dark-background-secondary);
+    border-color: var(--dark-border-color);
+  }
+  // Select free or actual
+  .selectFreeOrActual div{
+    background-color: var(--dark-background-secondary);
+    border-color: var(--dark-border-color);
+  }
+  // Create Collection
+  #smartnft-root .create-collection{
+    &__banner-loading,
+    &__header-banner{
+      background-color: var(--dark-background-primary);
+    }
+    &__profile-loading,
+    &__header-profile{
+      background-color: var(--dark-background-secondary);
+      border-color: var(--dark-border-color);
+    }
+    &__profile-uploader,
+    &__banner-uploader{
+      p{
+        color: var(--dark-text-primary);
+      }
+      label{
+        border: 2px solid var(--dark-border-color);
+      }
+    }
+    &__info{
+      p{
+        color: var(--dark-text-primary);
+      }
+      input, textarea{
+        background-color: var(--dark-background-secondary);
+        border-color: var(--dark-border-color);
+        color: var(--dark-text-primary);
+      }
+    }
+  } 
+  // COllection
+  .collection-card{
+    &__collection-photo{
+      &__noimg{
+        border-color: var(--dark-border-color);
+      }
+    }
+    background: var(--dark-background-secondary);
+    &__collection-photo{
+      border-color: var(--dark-border-color);
+    }
+    &__head p{
+      color: var(--dark-text-primary);
+    }
+    &__info{
+      p{
+        color: var(--dark-text-secondary)
+      }
+      &__value{
+        color: var(--dark-text-primary) !important;
+      }
+    }
+    figure{
+      &.collection-cover{
+        background: var(--dark-background-primary);
+      }
+    }
+  }
+  .elementor{
+    .collection-card{
+      &__collection-photo{
+        &__noimg{
+          border-color: var(--dark-border-color);
+        }
+      }
+      background: var(--dark-background-secondary);
+      &__collection-photo{
+        border-color: var(--dark-border-color);
+      }
+      &__head p{
+        color: var(--dark-text-primary);
+      }
+      &__info{
+        p{
+          color: var(--dark-text-secondary)
+        }
+        &__value{
+          color: var(--dark-text-primary) !important;
+        }
+      }
+      figure{
+        &.collection-cover{
+          background: var(--dark-background-primary);
+        }
+      }
+    }
+  }
+  // Collection Stats
+  .stats-header{
+    ul li{
+      color: var(--dark-text-primary);
+    }
+  }
+  .stats-item-loader,
+  .stats-items{
+    &>div{
+      border-color: var(--dark-border-color);
+      &:hover{
+        background-color: var(--dark-background-secondary);
+      }
+    }
+    .img-name{
+      .name{
+        color: var(--dark-text-primary);
+      }
+    }
+    .stats-item{
+      span{
+        color: var(--dark-text-primary);
+      }
+    }
+    span.loader{
+      background: var(--dark-background-primary);
+    }
+  }
+  .stats-filter{
+    border-color: var(--dark-border-color);
+    span{
+      color: var(--dark-text-primary);
+      &.active{
+        background-color: var(--dark-border-color);
+      }
+    }
+  }
+  // Collection single
+  .collection-container__header .profile-header{
+    &__edit-btn{
+      background: var(--dark-background-primary);
+      border: 2px solid var(--dark-border-color);
+      color: var(--dark-text-secondary);
+      svg{
+        path{
+          fill: var(--dark-text-primary);
+        }
+      }
+    }
+    .profile-header{
+      &__banner{
+        background-color: var(--dark-background-secondary);
+      }
+      &__profile{
+        background: var(--dark-background-primary);
+        border-color: var(--dark-border-color);
+      }
+    }
+    &__details{
+      color: var(--dark-text-primary);
+      a{
+        color: var(--dark-text-secondary);
+      }
+    }
+    &__name{
+      color: var(--dark-text-primary);
+    }
+  }
+  .collection-container{
+    .collection-editor{
+      &__container{
+        background-color: var(--dark-background-primary);
+        color: var(--dark-text-primary);
+        &::-webkit-scrollbar {
+          width: 5px;
+        }
+  
+        &::-webkit-scrollbar-track {
+          background: var(--dark-background-primary);
+        }
+  
+        &::-webkit-scrollbar-thumb {
+          background: var(--dark-background-secondary);
+          border-radius: 4px;
+        }
+      }
+      &__desc, &__name{
+        background-color: var(--dark-background-primary);
+        border-color: var(--dark-border-color);
+        color: var(--dark-text-primary);
+      }
+      .profile-upload-img p, .profile-upload-banner p{
+        color: var(--dark-text-primary);
+        font-weight: 600;
+      }
+    }
+  }
+  // Category Single
+  .single-category{
+    .category__name{
+      color: var(--dark-text-primary);
+    }
+    .category__desc{
+      color: var(--dark-text-secondary);
+    }
+    .category__banner-loading,
+    .category__header-banner{
+      background-color: var(--dark-background-secondary) !important;
+    }
+    .category__profile-loading,
+    .category__header-profile{
+      background: var(--dark-background-primary) !important;
+      border-color: var(--dark-border-color) !important;
+    }
+  }
+  // Profile Single
+  .smart-nft-profile{
+    .edit-profile-header{
+      &__banner,
+      &__banner-loading{
+        background-color: var(--dark-background-secondary) !important;
+      }
+      &__profile,
+      &__profile-loading{
+        background-color: var(--dark-background-primary) !important;
+        border-color: var(--dark-border-color) !important;
+      }
+    }
+    &.edit-profile{
+      .profile-upload-img, .profile-upload-banner{
+        p{
+          color: var(--dark-text-primary);
+        }
+      }
+      label{
+        p{
+          color: var(--dark-text-secondary);
+        }
+      }
+      input, textarea{
+        background: var(--dark-background-secondary);
+        border-color: var(--dark-border-color);
+        color: var(--dark-text-primary);
+      }
+    }
+    .profile-header{
+      &__name{
+        color: var(--dark-text-primary);
+      }
+      &__address{
+        color: var(--dark-text-secondary);
+      }
+      &__banner,
+      &__banner-loading{
+        background-color: var(--dark-background-secondary) !important;
+      }
+      &__profile,
+      &__profile-loading{
+        background-color: var(--dark-background-primary) !important;
+        border-color: var(--dark-border-color) !important;
+      }
+      &__edit-btn{
+        color: var(--dark-text-primary) !important;
+        background-color: var(--dark-background-primary) !important;
+        border-color: var(--dark-border-color) !important;
+      }
+    }
+    .profile__tabs{
+      border-color: var(--dark-border-color);
+      span{
+        color: var(--dark-text-secondary);
+        &.active{
+          color: var(--dark-text-primary);
+          border-color: var(--dark-text-secondary);
+        }
+      }
+    }
+  }
+  // Social profiles
+  .profile-socials {
+    &__input-group{
+      &__icon{
+        svg{
+          path{
+            fill: var(--dark-text-secondary);
+          }
+        }
+      }
+    }
+    .add-new-field{
+      color: var(--dark-text-secondary);
+    }
+    .add-more-profiles{
+      border-color: var(--dark-border-color);
+      ul{
+        li{
+          background-color: var(--dark-background-secondary);
+          color: var(--dark-text-primary);
+          border-color: var(--dark-border-color);
+          &:hover{
+            border-color: var(--dark-background-secondary);
+          }
+        }
+      }
+      &__icon{
+        svg{
+          path{
+            fill: var(--dark-text-primary)
+          }
+          fill: var(--dark-text-primary)
+        }
+      }
+    }
+  }
+  .profile-header{
+    &__socials{
+      svg{
+        path{
+          fill: var(--dark-text-secondary);
+        }
+      }
+    }
+  }
+
+  // 404
+  .nonft-found{
+    h3{
+      color: var(--dark-text-primary);
+    }
+    p{
+      color: var(--dark-text-secondary);
+    }
+  }
+  .error{
+    h1{
+      color: var(--dark-text-primary);
+    }
+    .error__message{
+      color: var(--dark-text-secondary);
+    }
+    button{
+      border-color: transparent;
+    }
+  }
+  // Popup
+  .smart-nft-popup{
+    &__inner{
+      background: var(--dark-background-secondary);
+      color: var(--dark-text-primary);
+      h1, h2, h3, h4, h5, h6, p{
+        color: var(--dark-text-primary);
+      }
+      input, textarea{
+        background-color: var(--dark-background-primary);
+        border-color: var(--dark-border-color);
+        color: var(--dark-text-primary);
+      }
+      .btn-close{
+        background-color: var(--dark-background-primary);
+        border-color: transparent;
+        color: var(--dark-text-primary);
+      }
+    }
+    &__share{
+      .btn-close{
+        background: var(--dark-background-secondary);
+        border-color: var(--dark-border-color);
+      }
+    }
+    &__social-share{
+      a{
+        border-color: var(--dark-border-color);
+        svg{
+          path{
+            fill: var(--dark-text-secondary);
+          }
+        }
+      }
+    }
+    &__share-input{
+      input{
+        background-color: var(--dark-background-primary);
+        border-color: var(--dark-border-color) !important;
+        color: var(--dark-text-primary);
+      }
+      .upload-lists .upload-single p.file-name{
+        color: var(--dark-text-primary);
+      }
+    }
+  }
+}
+.deployed-networks{
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+  width: 80%;
+  @include responsive(phone){
+    display: block !important;
+    width: 100% !important;
+  }
+  @include responsive(tab-port){
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
+    width: 100% !important;
+  }
+  .network{
+      min-width: 280px;
+      max-width: 300px;
+      border: 1px solid #ddd;
+      text-align: center;
+      padding: 40px;
+      border-radius: 10px;
+      cursor: pointer;
+      background-color: #fff;
+      img{
+          width: 70px;
+          margin-bottom: 15px;
+          @include responsive(phone){
+            width: 50px !important;
+          }
+      }
+      h2{
+          font-size: 21px;
+          margin-bottom: 5px;
+          @include responsive(phone){
+            font-size: 16px !important;
+          }
+          @include responsive(tab-port){
+            font-size: 19px !important;
+          }
+      }
+      p{
+          font-size: 16px;
+      }
+      &:hover{
+          border: 1px solid #888;
+      }
+      @include responsive(phone){
+        margin-bottom: 20px;
+        min-width: 100px;
+        padding: 20px !important;
+      }
+      @include responsive(tab-port){
+        min-width: auto !important;
+        padding: 25px 10px !important;
+      }
+  }
+}
+.contracts-standard,
+.selectFreeOrActual{
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+  @include responsive(phone){
+    display: block !important;
+  }
+  @include responsive(tab-port){
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
+    width: 100% !important;
+  }
+  div{
+      max-width: 300px;
+      border: 2px solid #ddd;
+      text-align: left;
+      padding: 35px;
+      border-radius: 10px;
+      cursor: pointer;
+      background-color: #fff;
+      img{
+          width: 80px;
+          margin-bottom: 15px;
+      }
+      h2{
+        font-size: 24px;
+        margin-top: 0;
+        @include responsive(phone){
+          font-size: 17px !important;
+        }
+      }
+      p{
+        font-size: 16px;
+        @include responsive(phone){
+          font-size: 14px !important;
+        }
+      }
+      &:hover{
+          border: 2px solid #555;
+      }
+      @include responsive(phone){
+        margin-bottom: 20px;
+        padding: 20px !important;
+      }
+      @include responsive(tab-port){
+        margin-bottom: 20px;
+      }
+  }
+  .contract{
+      &__single{}
+      &__multiple{}
+  }
+}

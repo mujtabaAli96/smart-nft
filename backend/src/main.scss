@@ -1,0 +1,59 @@
+//1st priority
+@import "scss/variable";
+@import "scss/typography";
+@import "scss/mixin";
+@import "scss/utils";
+@import "scss/btn";
+@import "scss/margin-padding";
+
+@import "component/create-nft/header";
+@import "component/create-nft/form";
+@import "component/create-nft/network-info";
+@import "component/create-nft/media-upload";
+@import "component/create-nft/media";
+@import "component/create-nft/meta";
+@import "component/create-nft/price";
+@import "component/create-nft/auction";
+@import "component/create-nft/split-payment";
+@import "component/create-nft/standards";
+@import "component/create-nft/networks";
+@import "component/create-nft/royalty";
+@import "component/create-nft/unlockable-content";
+@import "component/create-nft/categories";
+@import "component/create-nft/loading-popup";
+@import "component/create-nft/success-popup";
+@import "component/create-nft/back-btn-on-backend";
+@import "component/create-nft/listing-fee";
+
+@import "component/nft-list/style";
+@import "component/nft-list/pagination";
+
+@import "component/collection-list/style";
+
+@import "component/smart-contracts/style";
+@import "component/smart-contracts/deployed-contract-list";
+@import "component/smart-contracts/deploy-contract-form";
+@import "component/smart-contracts/erc20-form";
+
+@import "component/create-category/header";
+@import "component/create-category/img-uploader";
+@import "component/create-category/info";
+@import "component/create-category/style";
+
+@import "component/categorie-list/style";
+
+@import "../../common/component/popup";
+@import "../../common/component/switch";
+@import "../../common/component/message/message";
+
+@import "../../common/component/error-comp/error";
+@import "../../common/component/connect-wallet/style";
+
+@import "component/create-collection/header";
+@import "component/create-collection/img-uploader";
+@import "component/create-collection/info";
+@import "component/create-collection/style";
+@import "component/settings/styles";
+@import "component/addons/addons";
+// loader
+@import "../../common/component/loader";

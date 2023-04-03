@@ -1,0 +1,23 @@
+.profile {
+  &__tabs {
+    display: flex;
+    align-items: center;
+    padding-bottom: 0px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
+    span:not(:last-child) {
+      margin-right: 20px;
+    }
+    span {
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: 400;
+      padding-bottom: 10px;
+    }
+    span.active {
+      font-weight: 500;
+      color: #000;
+      border-bottom: 1px solid #000;
+    }
+  }
+}

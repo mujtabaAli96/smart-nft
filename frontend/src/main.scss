@@ -1,0 +1,63 @@
+//1st priority
+@import "scss/variable";
+@import "scss/typography";
+@import "scss/mixin";
+@import "scss/utils";
+@import "scss/animation";
+@import "scss/btns";
+
+@import "component/single-page/single-page";
+@import "component/single-page/buy-button";
+@import "component/single-page/split-payment";
+@import "component/single-page/auction-bid";
+@import "component/single-page/withdraw-underbid";
+@import "component/single-page/tabs";
+@import "component/single-page/tabs/labels";
+@import "component/single-page/tabs/stats";
+
+@import "component/edit-profile/profile";
+@import "component/edit-profile/header";
+@import "component/edit-profile/form";
+@import "component/edit-profile/upload-img";
+
+@import "component/all-nft/all-nft";
+@import "component/all-collection/all-collection";
+@import "component/all-nft/card";
+@import "component/all-collection/card";
+@import "component/all-nft/pagination";
+@import "component/filter/filter";
+
+@import "component/profile/header";
+@import "component/profile/tabs";
+@import "component/profile/filter";
+
+@import "component/create-collection/style";
+@import "component/create-collection/header";
+@import "component/create-collection/img-uploader";
+@import "component/create-collection/info";
+
+@import "component/statistics/stats-header";
+@import "component/statistics/items-loader";
+@import "component/statistics/filter";
+
+@import "component/single-category/style";
+
+@import "component/top-collector/top-collector";
+@import "component/collection/collection";
+
+@import "../../common/component/popup";
+@import "../../common/component/loader";
+@import "../../common/component/switch";
+@import "../../common/component/message/message";
+@import "../../common/component/notification/notification";
+@import "../../common/component/error-comp/error";
+@import "../../common/component/connect-wallet/style";
+
+@import "../../common/component/error-comp/error";
+
+//element
+@import "element/nft-grid/style";
+@import "element/collection-grid";
+@import "element/collection-carousel";
+@import "element/create-nft";
+@import "element/owlcarousel";

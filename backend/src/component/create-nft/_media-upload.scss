@@ -1,0 +1,31 @@
+.form-img-upload__upload-box {
+  border: 3px dashed #f0f0f0;
+  display: block;
+  text-align: center;
+  position: relative;
+  border-radius: 10px;
+  margin-bottom: 22px;
+  padding: 65px 10px;
+
+  &.thumbnail {
+    padding: 5px 10px;
+    height: auto;
+    display: block;
+  }
+
+  label {
+    padding: 12px 34px;
+    background: #f6f6f6;
+    color: #1e1e1e;
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: 600;
+    display: inline-block;
+    margin-top: 20px;
+    cursor: pointer;
+
+    input {
+      display: none;
+    }
+  }
+}

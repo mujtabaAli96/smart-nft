@@ -1,0 +1,311 @@
+.collection-card {
+  border-radius: 10px;
+  overflow: hidden;
+  background: #eee;
+  figure {
+    &.collection-cover {
+      height: 180px;
+      overflow: hidden;
+      background: #ddd;
+      background-size: cover !important;
+      background-repeat: no-repeat !important;
+
+      @include responsive(phone) {
+        height: 120px;
+      }
+    }
+  }
+  &__head {
+    margin: -25px 0 0 16px;
+    p {
+      font-weight: 600;
+      margin: 0;
+      font-size: 18px;
+      color: #000;
+      line-height: 30px;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      width: 95%;
+      white-space: nowrap;
+      margin-bottom: 15px;
+      @include responsive(phone) {
+        font-size: 15px;
+      }
+    }
+  }
+  &__collection-photo {
+    margin: 0;
+    width: 70px;
+    height: 70px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    margin-top: -27px;
+    margin-bottom: 10px;
+    object-fit: cover;
+
+    &__noimg {
+      width: 70px;
+      height: 70px;
+      display: block;
+      background: #999;
+      border-radius: 10px;
+      border: 2px solid #fff;
+      margin-top: -50px;
+      margin-bottom: 10px;
+    }
+  }
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 18px 15px;
+    p {
+      color: #999;
+      margin: 0;
+      font-size: 15px;
+      @include responsive(phone) {
+        font-size: 13px;
+      }
+    }
+    &__value {
+      color: #000 !important;
+      font-weight: 600;
+    }
+    &__logo{
+      height: 16px !important;
+      margin-right: 5px;
+      margin-top: -2px;
+    }
+    @include responsive(phone) {
+      .total,
+      .items {
+        display: none;
+      }
+      .floor {
+        display: flex;
+        gap: 10px;
+      }
+    }
+  }
+}
+.elementor .collection-card {
+  border-radius: 10px;
+  overflow: hidden;
+  background: #eee;
+  figure {
+    &.collection-cover {
+      height: 180px;
+      overflow: hidden;
+      background: #ddd;
+      background-size: cover;
+      background-repeat: no-repeat;
+
+      @include responsive(phone) {
+        height: 120px;
+      }
+    }
+  }
+  &__head {
+    margin: -25px 0 0 16px;
+    p {
+      font-weight: 600;
+      margin: 0;
+      font-size: 18px;
+      color: #000;
+      line-height: 30px;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      width: 95%;
+      white-space: nowrap;
+
+      @include responsive(phone) {
+        font-size: 15px;
+      }
+    }
+  }
+  &__collection-photo {
+    margin: 0;
+    width: 70px;
+    height: 70px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    margin-top: -27px;
+    margin-bottom: 10px;
+    object-fit: cover;
+
+    &__noimg {
+      width: 70px;
+      height: 70px;
+      display: block;
+      background: #999;
+      border-radius: 10px;
+      border: 2px solid #fff;
+      margin-top: -50px;
+      margin-bottom: 10px;
+    }
+  }
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 18px 15px;
+    p {
+      color: #999;
+      margin: 0;
+      font-size: 15px;
+      @include responsive(phone) {
+        font-size: 13px;
+      }
+    }
+    &__value {
+      color: #000 !important;
+      font-weight: 600;
+    }
+
+    @include responsive(phone) {
+      .total,
+      .items {
+        display: none;
+      }
+      .floor {
+        display: flex;
+        gap: 10px;
+      }
+    }
+  }
+}
+.collection-card-list{
+  align-self: center;
+  border-bottom: 1px solid #E0E7EC;
+  a{
+    color: #444;
+    padding: 15px 0;
+    display: grid;
+    padding-left: 10px;
+    grid-template-columns: 4fr minmax(0, 2fr) minmax(0, 2fr) minmax(0, 2fr) minmax(0, 1fr) minmax(0, 1fr);
+    align-items: center;
+    &:hover{
+      text-decoration: none;
+      background-color: #eee;
+    }
+  }
+  .heading{
+    padding: 15px 0;
+    display: grid;
+    grid-template-columns: 4.12fr minmax(0, 2fr) minmax(0, 2fr) minmax(0, 2fr) minmax(0, 1fr) minmax(0, 1fr);
+    font-weight: 600;
+    color: #888;  
+  }
+  &__img{
+    width: 130%;
+    img{
+      width: 50px;
+      border-radius: 10px;
+      margin-right: 15px;
+      margin-left: 20px;
+    }
+    span{
+      font-weight: 600;
+    }
+  }
+  &__collection-photo__noimg{
+    width: 50px;
+    height: 50px;
+    background-color: #ddd;
+    border-radius: 8px;
+    margin: 0 15px 0 20px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  p{
+    font-weight: 600;
+    align-self: center;
+    margin: 0;
+    line-height: 21px;
+  }
+  .list-logo{
+    height: 13px;
+    vertical-align: middle;
+    margin-top: -2px;
+    margin-right: 3px;
+  }
+  &__info{
+    &__value{
+      font-weight: 700;
+      color: #363c42;
+      // text-align: right;
+    }
+  }
+  @include responsive(tab-port){
+    display: none;
+  }
+}
+.collection-card-list-mobile{
+  display: none;
+  @include responsive(tab-port){
+    display: block;
+    margin: 0 -25px;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+  }
+  .list-logo{
+    width: 15px !important;
+    margin-right: 5px !important;
+  }
+  a{
+    display: flex;
+  }
+  .collection-card-list{
+    &__img{
+      width: 80%;
+      display: grid;
+      grid-template-columns: 0.2fr 0.6fr 4fr;
+      gap: 5px;
+      align-items: center;
+      span{
+        font-weight: 500;
+        &::first-child{
+          width: 10px;
+        }
+      }
+      img{
+        width: 40px;
+        border-radius: 10px;
+        margin-right: 0px;
+        margin-left: 1px;
+      }
+    }
+    &__collection-photo{
+      display: block;
+      max-width: 40px;
+      margin-right: 5px !important;
+      &__noimg{
+        width: 40px;
+        height: 40px; 
+        margin: 0;
+        margin-right: 5px;
+      }
+    }
+    &__info{
+      &__value{
+        font-weight: 500;
+        font-size: 12px;
+      }
+    }
+  }
+  .vol{
+    width: 20%;
+    text-align: right;
+    display: flex;
+    align-items: center;
+  }
+}
+.price-indicator{
+  font-size: 13px;
+  display: block;
+  font-weight: 500 !important;
+}
+.price-up{
+  color: #00926f;
+}
+.price-down{
+  color: red;
+}

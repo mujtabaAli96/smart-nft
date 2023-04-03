@@ -1,0 +1,56 @@
+.putonsale {
+  .create-nft-form__switcher-section {
+    display: grid;
+    grid-template-columns: 1fr 40px;
+    margin-bottom: 10px;
+
+    input {
+      width: auto !important;
+    }
+  }
+  &-split{
+    text-align: left;
+    margin: 20px 10px;
+    &__switcher{
+      display: flex;
+      justify-content: space-between;
+    }
+    &__input-fields{
+      margin-bottom: 20px;
+      .split-payments__flex{
+        position: relative
+      }
+      input[type="text"]{
+        width: 90% !important;
+        margin-bottom: -1px !important;
+        border-radius: 10px 10px 0 0 !important;
+      }
+      input[type="number"]{
+        width: 90% !important;
+        margin-bottom: -1px !important;
+        border-radius: 0px 0px 10px 10px !important;
+      }
+      svg{
+        padding: 6px;
+        width: 30px;
+        height: 30px;
+        background: rgba(255, 255, 255, 0.5);
+        position: absolute;
+        top: 24px;
+        right: -8px;
+        border-radius: 5px;
+      }
+    }
+    &__btn{
+      display: block;
+      margin: 10px;
+      padding: 10px;
+      text-transform: capitalize;
+      border-radius: 6px;
+      line-height: 13px;
+      cursor: pointer;
+      background: rgba(255,255,255,0.5);
+      color: #000;
+    }
+  }
+}

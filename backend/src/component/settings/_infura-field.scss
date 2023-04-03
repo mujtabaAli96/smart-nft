@@ -1,0 +1,15 @@
+.infura-settings {
+  width: 800px;
+
+  label {
+    margin: 10px 0px;
+    input {
+      @include inputStyle;
+      width: 100%;
+    }
+  }
+
+  &__submit-btn {
+    margin: 20px 0px;
+  }
+}

@@ -1,0 +1,26 @@
+//Not useing this file
+.create-nft-form-parent {
+  margin-top: 50px;
+
+  .back {
+    cursor: pointer;
+    padding: 6px 0px;
+    margin-bottom: 10px;
+    width: max-content;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    svg {
+      fill: #6c6868;
+      width: 24px;
+      margin-right: 10px;
+    }
+  }
+}
+
+.create-nft-form * {
+  margin: 0;
+  padding: 0;
+}

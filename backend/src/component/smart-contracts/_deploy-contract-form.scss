@@ -1,0 +1,183 @@
+.deploy-contract-form {
+  .con-flex {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    column-gap: 20px;
+
+    .flex {
+      display: flex;
+      align-items: center;
+      justify-content: end;
+    }
+  }
+  .switch {
+    width: 40px;
+    height: 22px;
+    display: block;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  .switch.open {
+    background: #1384e0;
+    &::after {
+      content: "";
+      width: 18px;
+      height: 18px;
+      background: #fff;
+      z-index: 2;
+      display: block;
+      border-radius: 50%;
+      margin-top: 2px;
+      margin-left: 20px;
+    }
+  }
+
+  .switch.close {
+    background: #000;
+    &::after {
+      content: "";
+      width: 18px;
+      height: 18px;
+      background: #fff;
+      z-index: 2;
+      display: block;
+      border-radius: 50%;
+      margin-top: 2px;
+      margin-left: 2px;
+    }
+  }
+
+  .input-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+
+    label p {
+      margin: 0;
+      margin-bottom: 8px;
+    }
+
+    input {
+      height: 35px;
+      border-radius: 5px;
+      margin-bottom: 15px;
+      background: #ddd;
+      border: none;
+      width: 100%;
+    }
+  }
+
+  button {
+    cursor: pointer;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background: #3c4ed8;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    svg {
+      margin-left: 10px;
+      animation: 1s infinite rotate;
+      position: relative;
+      top: 1px;
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  &__close {
+    margin-bottom: 20px;
+    img {
+      width: 16px;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      cursor: pointer;
+    }
+  }
+  .done {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-bottom: 1px dashed #999;
+    img{
+      position: relative;
+      width: 30px;
+      margin-bottom: 15px;
+      right: 0;
+      cursor: default;
+    }
+  }
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(0deg);
+  }
+  from {
+    transform: rotate(360deg);
+  }
+}
+.popup-input-field{
+  .inactive-field{
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 10px;
+    display: block;
+    background: #ddd;
+  }
+}
+.smart-nft-popup__container.portal {
+}
+.smart-nft-popup__inner.portal {
+  height: 250px;
+  .deploy_popup_form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+
+    .input-box {
+      margin-bottom: 20px;
+    }
+
+    button {
+      cursor: pointer;
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      background: #3c4ed8;
+      border: none;
+      border-radius: 8px;
+      color: #fff;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        margin-left: 20px;
+        animation: 1s infinite rotate;
+      }
+    }
+    &__close {
+      margin-bottom: 20px;
+      img {
+        width: 20px;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+      }
+    }
+  }
+}

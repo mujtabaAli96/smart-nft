@@ -1,0 +1,143 @@
+@mixin name {
+  font-size: 16px;
+  font-weight: 600;
+  position: absolute;
+  left: 116px;
+  bottom: -30px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 180px;
+}
+.collections-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 40px;
+  row-gap: 40px;
+  justify-content: space-between;
+  &.swiper-wrapper{
+    column-gap: 0;
+    row-gap: 0;
+  }
+  @include responsive(tab-port) {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  @include responsive(phone) {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+.collection-grid {
+  &__top {
+    position: relative;
+    .banner,
+    .no-banner {
+      height: 190px;
+      width: 100%;
+      object-fit: cover;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+    }
+
+    .no-banner {
+      background: #eee;
+    }
+
+    .profile,
+    .no-profile {
+      width: 83px !important;
+      height: 83px;
+      border-radius: 8px;
+      object-fit: cover;
+      position: absolute;
+      left: 10px;
+      bottom: -37px;
+    }
+    .no-profile {
+      background: #e8e4e4;
+    }
+
+    .name {
+      @include name;
+    }
+  }
+
+  &__bottom {
+    background: #f7f7f7;
+    padding: 60px 20px 20px 20px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 50px;
+    justify-items: start;
+    column-gap: 15px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+
+    p {
+      font-size: 12px;
+      color: #a7a7a7;
+      margin-bottom: 6px;
+    }
+    span {
+      font-size: 14px;
+      font-weight: 600;
+      color: #1e1e1e;
+    }
+  }
+
+  .collections-grid &-classic {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    img.profile,
+    .no-profile {
+      height: 300px;
+      width: 100%;
+      object-fit: cover;
+    }
+    .no-profile {
+      background: #e8e4e4;
+    }
+
+    .name {
+      @include name;
+      position: relative;
+      left: 0;
+      bottom: 0;
+      color: #fff;
+      width: auto;
+      font-size: 22px;
+      margin-bottom: 5px;
+    }
+
+    div.info {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      padding: 20px;
+      width: 100%;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+      overflow: hidden;
+      background: linear-gradient(
+        rgba(0, 0, 0, 0) 60%,
+        rgba(0, 0, 0, 0.8) 100%
+      );
+
+      div {
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+        color: #fff;
+        p {
+          margin: 0;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}

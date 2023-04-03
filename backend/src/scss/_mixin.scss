@@ -1,0 +1,66 @@
+@mixin inputStyle {
+  height: 45px;
+  border-radius: 10px;
+  background: #f6f6f6;
+  padding: 10px 15px;
+  border: 1px solid #eee;
+  font-weight: 400;
+  color: #1e1e1e;
+  font-size: 15px;
+  &:focus {
+    outline: none;
+    border-width: 1px;
+  }
+  &:focus-visible {
+    outline: none;
+    border-width: 1px;
+  }
+  &::placeholder {
+    color: #a7a7a7;
+  }
+}
+
+@mixin textareaStyle {
+  border-radius: 10px;
+  background: #f6f6f6;
+  border: 1px solid #eee;
+  color: #1e1e1e;
+  padding: 15px;
+  width: 100%;
+  font-size: 15px;
+  &:focus {
+    outline: none;
+    border-width: 1px;
+  }
+  &::placeholder {
+    color: #a7a7a7;
+  }
+}
+
+// MEDIA QUERY MANAGER
+
+@mixin responsive($breakpoint) {
+  @if $breakpoint == phone {
+    @media only screen and (max-width: 37.5em) {
+      @content;
+    } //600px
+  }
+
+  @if $breakpoint == tab-port {
+    @media only screen and (max-width: 56.25em) {
+      @content;
+    } //900px
+  }
+
+  @if $breakpoint == tab-land {
+    @media only screen and (max-width: 75em) {
+      @content;
+    } //1200px
+  }
+
+  @if $breakpoint == big-desktop {
+    @media only screen and (min-width: 112.5em) {
+      @content;
+    } //1800
+  }
+}

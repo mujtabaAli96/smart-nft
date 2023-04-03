@@ -1,0 +1,16 @@
+#smartnft-root {
+  .create-category {
+    width: 990px;
+    margin: 10px auto 50px;
+
+    &__form-imgupload-container {
+      display: grid;
+      grid-template-columns: 1fr 300px;
+      column-gap: 100px;
+    }
+
+    &__btn {
+      margin-top: 30px;
+    }
+  }
+}
